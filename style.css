@@ -1,0 +1,139 @@
+body{	
+	background-image:url(https://www.cnet.com/a/img/resize/13fdd59084a539f6d7410a83e0cb3032d2c55267/hub/2017/05/22/51f722c8-9951-4cae-84d7-4df16e288522/norwegianjoy-005.jpg?auto=webp&width=1092); background-repeat: no-repeat; background-size:cover;
+	}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+li a:hover:is(.active){
+    background-color: darkgreen;
+}
+.active {
+  background-color: #04AA6D;
+}
+.History{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 1300px;
+    background-color: lightblue;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Navigation bar style */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* right link*/
+.navbar a.right {
+    float: right;
+}
+
+/* The color of the link when the mouse is moved */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* main content area */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* test image */
+.fakeimg {
+    
+    width: 100%;
+    padding: 20px;
+}
+
+/* bottom */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Responsive Layout - Stack two columns on top of each other when the device width is less than 700px */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive Layout - When the width of the screen device is less than 400px, the navigation bar is stacked on top of each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+
+#header {
+    background: lightblue;
+    text-align:center;
+    padding:20px;
+    
+}
