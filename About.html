@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Go kart lover's club</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+
+<body onload="buttonFunction()">
+  <ul>
+    <li><a href="index.html" onclick="alertFunction()">Home</a></li>
+    <li><a href="History&Competition.html" onclick="alertFunction()">History&Competitions</a></li>
+    <li><a href=" " onclick="alertFunction()">Come back soon</a></li>
+    <li style="float:right"><a class="active" href="About.html" onclick="alertFunction()">About</a></li>
+  </ul>
+	<center>
+	<font size="10"><p style="color: white;">Our club</p></font>
+  
+	<img onmouseover="smallImg(this)" onmouseout="normalImg(this)" border="0" src="https://www.k1speed.ca/wp-content/uploads/2019/01/arrive-and-drive.jpg">
+ 	<hr>
+	
+	<div id="header">
+<div class="row">
+  <div class="side">
+      <h1>Peter</h1>
+      <h5>My photo:</h5>
+      <div class="fakeimg" style="height:200px;"><img src="123.png" height='180px' width='200px' ></div>
+      <p>Don't know what to say....so.....have a great day.</p>
+      
+  </div>
+  <div class="main">
+      <h2>Chairman</h2>
+      
+      <h3>
+      	Hello, this is Peter. I hope I can create a space for our go kart lover to make friend and learn from each other.
+      </h3>
+
+  <p>
+  Personal media：<br>
+   Instergram: Peter Smith <br>
+   Face Book:   Peter Smith <br>
+   Line:   +1   437-972-8178 <br>
+   What's app:   +1   437-972-8178 <br>
+   You Tube Channel(English）：Peter-D Zhou <br>
+   </p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Go Kart lover's club</h2>
+</div>
+</div>
+	
+	<hr>
+	<font size="8" style="color: white;text-align: center;"><p><i>Click to visit my channel</i></p></font>
+    <a href="https://www.youtube.com/channel/UCEuD8VASlNj7w1zwpNDXFPw"><img src="https://miro.medium.com/max/2000/1*0mXxgWIQCki7CQxXf9drhw.jpeg" width="200" height="160"></a>
+<font id="word" style="color: blue;" onclick="document.getElementById('word').innerHTML = 'Thank you for your time.'" ><h2>Hello, welcome to my website.</h2></font>
+	</center>
+
+<script type="text/javascript">
+    function buttonFunction(){
+    var t = new Date();
+    alert(t);
+        switch(new Date().getDay()){
+      case 0:
+        alert("Tomorrow is Monnday");
+        break;
+      case 1:
+        alert("Tomorrow is Tuesday");
+        break;
+      case 2:
+        alert("Tomorrow is Wednesday");
+        break;
+      case 3:
+        alert("Tomorrow is Thursday");
+        break;
+    case 4:
+        alert("Tomorrow is Friday");
+        break;
+    case 5:
+        alert("Tomorrow is Saturday");
+        break;
+      case 6:
+        alert("Tomorrow is Sunday");  
+  }
+}
+  
+  function smallImg(x) {
+  x.style.height = "700px";
+  x.style.width = "1100px";
+}
+
+function normalImg(x) {
+  x.style.height = "900px";
+  x.style.width = "1330px";
+}
+
+function alertFunction(){
+alert("Thank you for your time.")
+}
+  </script>
+
+</body>
+
+</html>
