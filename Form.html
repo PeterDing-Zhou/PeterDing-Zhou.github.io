@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>CONTACT US</title>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+li a:hover:is(.active){
+    background-color: darkgreen;
+}
+.active {
+  background-color: #04AA6D;
+}
+</style>
+
+</head>
+<body style="background-image: url(https://th.bing.com/th/id/R.7423723c806b8885a45eaa97fe6a3f10?rik=W3jLNmLaiojGZA&riu=http%3a%2f%2fpic3.bbzhi.com%2fxitongbizhi%2fjingmei1080pkuanping%2fcomputer_kuan_275885_18.jpg&ehk=wf7iehVmvZCRd3Bnb3KQ7YVIef5d1Uc77dH3CzsOsPI%3d&risl=&pid=ImgRaw&r=0);">
+	
+	<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Form.html">Connect</a></li>
+    <li><a href="Content.html">Content</a></li>
+    <li><a href="Tips.html">Tips</a></li>
+    <li style="float:right"><a class="active" href="About.html">About Us</a></li>
+  </ul>
+
+	<center><h1 style="color: black;">About you</h1></center>
+	<form action="123.php">
+		<button onclick="sum()">Click the button enter your name</button>
+		<br>
+		<label for="birthday">DOB:</label>
+		<input type="date" name="birthday"><br>
+		<label for="gender">Gender:</label>
+		<select name="gender">
+			<option name="male">Male</option>
+			<option name="female">Female</option>
+			<option name="unknown">unknown</option>
+			
+
+		</select>
+		<label for="countries">Countries:</label>
+		<input type="checkbox" name="China">
+		<label for="China">China</label>
+		<input type="checkbox" name="Japan">
+        <label for="japan">Japan:</label>
+		<input type="checkbox" name="Canada">
+		<label for="Canada">Canada:</label>
+		<br>
+		<label for="education">Education:</label>
+		<input type="radio" name="Education">
+		<label for="primary school">Primary school</label>
+		<input type="radio" name="primary school">
+		<label for="middle school">Middle school</label>
+		<input type="radio" name="middle school">
+		<label for="university">University</label><br>
+		<label for="message">Message</label>
+		<textarea name="message" rows="3" cols="3"></textarea>
+		<label for="type of ticket">Type of ticket:</label>
+		<input typetype of ticket="Family" name="family"><br>
+		<label for="email">Email:</label>
+		<input type="eamil" name="email"><br>
+		<label for="time">Time of born</label>
+		<input type="time" name="name"><br>
+		<label for="file">Resume</label>
+		<input type="file" name="file"><br>
+		<label for="days">days:</label>
+		<input type="expect price" name="expect price" min="2000" max="5000"><br>
+		<label for="stay">stay:</label>
+		<select name="stay">
+			<option name="house">house</option>
+			<option name="apartment">Apartmentr</option>
+			<option name="other">other</option><br>
+			<input type="submit">
+    </form>
+    <button onclick="sexFunction()">Click to enter your gender</button>
+
+    <script>
+    	function sexFunction(){
+		var ans = window.prompt("Please type a valuid gender");
+		if (ans == "male"){
+			alert("Hello, sir");
+		}
+		else if(ans == "female"){
+			alert("Helo, madam");
+		}
+		else{
+			alert("Please entry a valid gender");
+		}
+
+	}
+	function sum(){
+	var a = window.prompt("Please type your first name");
+	var b = window.prompt("Please type your last name");
+	var name = a+b
+	alert("hello"+name);
+	}
+
+    </script>
+
+	</boddy>
+	</html>
